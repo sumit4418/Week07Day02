@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li id="test">list 1</li>
+    <li class="cl">list 2</li>
+    <li class="cl">list 3</li>
+</ul>
+
+    <script type="text/javascript">
+    let inner=document.getElementById("test");
+    console.log(inner);
+    inner.innerHTML="sumit";
+        let select = document.getElementsByClassName("cl")
+        console.log(select);
+        console.log(select.length)
+        for (let i=0; i<select.length; i++)
+        {
+            select[i].innerHTML="sandeep";
+        }
+    </script>
+</body>
+</html>
